@@ -630,15 +630,6 @@ p {
   margin-bottom: 0;
 }
 
-.service-number {
-  display: block;
-  margin-bottom: 1.35rem;
-  color: var(--gold);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-}
-
 /* Closing CTA */
 .cta-section {
   padding-block: 4.5rem;
