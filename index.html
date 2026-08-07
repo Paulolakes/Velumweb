@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VELUM | Persianas Exteriores, Pérgolas y Cierres de Terraza en la Región del Maule</title>
   <meta name="description" content="Especialistas en persianas exteriores de aluminio, pérgolas bioclimáticas, cierres Zipper Sunscreen, PVC transparente y climatización en la Región del Maule (Talca, Curicó, Linares). Cotiza por WhatsApp.">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#070707">
+  <meta name="author" content="VELUM">
   <link rel="canonical" href="https://grupovelum.cl/">
 
   <!-- Favicon y Marca de Navegador -->
@@ -47,31 +48,98 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "HomeAndConstructionBusiness",
+        "@type": "WebSite",
+        "@id": "https://grupovelum.cl/#website",
+        "url": "https://grupovelum.cl/",
+        "name": "VELUM",
+        "description": "Persianas exteriores, pérgolas, cierres de terraza y climatización en la Región del Maule.",
+        "inLanguage": "es-CL",
+        "publisher": { "@id": "https://grupovelum.cl/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://grupovelum.cl/#webpage",
+        "url": "https://grupovelum.cl/",
+        "name": "VELUM | Persianas Exteriores, Pérgolas y Cierres de Terraza en la Región del Maule",
+        "isPartOf": { "@id": "https://grupovelum.cl/#website" },
+        "about": { "@id": "https://grupovelum.cl/#organization" },
+        "inLanguage": "es-CL",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://grupovelum.cl/"
+          }]
+        },
+        "mainEntity": {
+          "@type": "FAQPage",
+          "@id": "https://grupovelum.cl/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿En qué zonas de la Región del Maule prestan servicios de instalación?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Atendemos en toda la Región del Maule, incluyendo Talca, Curicó, Linares, San Javier, Constitución, San Clemente y zonas aledañas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué ventajas tienen las persianas exteriores de aluminio en el clima del Maule?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Brindan aislamiento térmico reduciendo el calor en verano y el frío en invierno, además de privacidad, aislamiento acústico y mayor seguridad para el hogar u oficina."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuál es la diferencia entre Cierre Zipper Sunscreen y PVC Transparente?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El Zipper Sunscreen usa malla microperforada que filtra el sol y resiste el viento manteniendo ventilación. El cierre PVC transparente (cristal) bloquea lluvia y viento conservando visibilidad y luminosidad total."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo solicitar un presupuesto o asesoría para un proyecto?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Contáctanos por WhatsApp con las medidas aproximadas de tu terraza o ventanas. Entregamos orientación técnica de inmediato y coordinamos una visita en terreno sin costo."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
         "@id": "https://grupovelum.cl/#organization",
         "name": "VELUM",
         "url": "https://grupovelum.cl/",
-        "logo": "https://grupovelum.cl/assets/logo-velum.webp",
-        "image": "https://grupovelum.cl/assets/og-velum-servicios.jpg",
-        "description": "Persianas exteriores de aluminio, pérgolas bioclimáticas, cierres Zipper Sunscreen, PVC transparente y climatización a medida en la Región del Maule.",
-        "telephone": "+56900000000",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grupovelum.cl/assets/logo-velum.webp",
+          "width": 1000,
+          "height": 302
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://grupovelum.cl/assets/og-velum-servicios.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "description": "Especialistas en persianas exteriores de aluminio, pérgolas bioclimáticas, cierres de terraza Zipper Sunscreen, PVC transparente y climatización a medida en la Región del Maule, Chile.",
+        "priceRange": "$$",
+        "currenciesAccepted": "CLP",
         "areaServed": [
-          {
-            "@type": "AdministrativeArea",
-            "name": "Región del Maule"
-          },
-          {
-            "@type": "City",
-            "name": "Talca"
-          },
-          {
-            "@type": "City",
-            "name": "Curicó"
-          },
-          {
-            "@type": "City",
-            "name": "Linares"
-          }
+          { "@type": "AdministrativeArea", "name": "Región del Maule" },
+          { "@type": "City", "name": "Talca" },
+          { "@type": "City", "name": "Curicó" },
+          { "@type": "City", "name": "Linares" },
+          { "@type": "City", "name": "San Javier" },
+          { "@type": "City", "name": "Constitución" },
+          { "@type": "City", "name": "San Clemente" }
         ],
         "address": {
           "@type": "PostalAddress",
@@ -83,17 +151,20 @@
           "latitude": -35.4264,
           "longitude": -71.6554
         },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
-          }
-        ],
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "availableLanguage": "Spanish",
+          "url": "https://wa.me/message/2YOEDXF52VKVL1"
+        },
         "sameAs": [
-          "https://www.instagram.com/velumchile/",
-          "https://wa.me/message/2YOEDXF52VKVL1"
+          "https://www.instagram.com/velumchile/"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -104,7 +175,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Persianas Exteriores de Aluminio",
-                "description": "Protección solar, aislamiento térmico y acústico, y seguridad para viviendas y oficinas."
+                "description": "Protección solar, aislamiento térmico y acústico, y seguridad para viviendas y oficinas en la Región del Maule."
               }
             },
             {
@@ -112,15 +183,15 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Pérgolas Bioclimáticas y de Aluminio",
-                "description": "Estructuras elegantes para ampliar el uso de terrazas todo el año."
+                "description": "Estructuras elegantes para ampliar el uso de terrazas y espacios exteriores durante todo el año."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Cierres Zipper Sunscreen",
-                "description": "Tela técnica microperforada tensada con resistencia al viento y control solar."
+                "name": "Cierres de Terraza Zipper Sunscreen",
+                "description": "Malla microperforada técnica tensada con resistencia al viento y control solar."
               }
             },
             {
@@ -141,44 +212,6 @@
             }
           ]
         }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://grupovelum.cl/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿En qué zonas de la Región del Maule prestan servicios de instalación?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Atendemos en toda la Región del Maule, incluyendo ciudades principales como Talca, Curicó, Linares, San Javier, Constitución y zonas aledañas."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Qué ventajas tienen las persianas exteriores de aluminio en el clima del Maule?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Brindan alta eficiencia térmica reduciendo el calor en verano y aislando del frío en invierno, además de aportar privacidad, aislamiento acústico y mayor seguridad."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cuál es la diferencia entre Cierre Zipper Sunscreen y PVC Transparente?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El cierre Zipper Sunscreen utiliza malla microperforada técnica que filtra el sol y resiste el viento. El cierre PVC cristal transparente bloquea lluvia y viento manteniendo total visibilidad panorámica."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cómo solicitar un presupuesto o asesoría para un proyecto?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Puedes contactarnos directamente por WhatsApp con las medidas aproximadas o requerimientos de tu espacio para coordinar una evaluación técnica y cotización personalizada."
-            }
-          }
-        ]
       }
     ]
   }
