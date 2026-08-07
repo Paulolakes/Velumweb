@@ -1067,6 +1067,7 @@ p {
   stroke: none;
 }
 
+
 @media (max-width: 35.99rem) {
   .footer-social-links {
     align-items: flex-start;
@@ -1078,3 +1079,74 @@ p {
     font-size: 0.92rem;
   }
 }
+
+/* =========================================================
+   SECCIÓN FAQ (PREGUNTAS FRECUENTES) - SEO & ACCESIBILIDAD
+   ========================================================= */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 52rem;
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--charcoal);
+  overflow: hidden;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.faq-item[open] {
+  border-color: var(--gold-dark);
+  background: var(--charcoal-light);
+}
+
+.faq-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 1.75rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  fill: var(--gold);
+  transition: transform var(--transition);
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 1.75rem 1.5rem 1.75rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: -0.25rem;
+  padding-top: 1.25rem;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
